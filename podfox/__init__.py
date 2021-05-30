@@ -405,7 +405,7 @@ def main():
             maxnum = int(arguments['--how-many'])
         else:
             maxnum = CONFIGURATION['maxnum']
-        rename_files = bool(arguments['--rename-files'])
+        rename_files = True
         #download episodes for a specific feed
         if arguments['<shortname>']:
             feed = find_feed(arguments['<shortname>'])
